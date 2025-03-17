@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <!--Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/Steve (1).png " alt="Stephen Kinyua logo" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid    " onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i> 
+            
+     </nav>
+
+        <div class="header-text">
+            <p>FrontEnd Software Engineer</p>
+            <h1>Hi,I'm <span>Stephen</span><br>Kinyua from Kenya</h1>
+        </div>
+    </div>
+   </div> 
+
+   <!------------------ About Section---------------------------->
+
+   <div id="about">
+    <div class="container">
+        <div class="row">
+         <div class="about-col-1">
+            <img src="Images/lee-campbell-DtDlVpy-vvQ-unsplash.jpg" alt="Stephen Kinyua's profile img" width="50%">
+         </div>
+         <div class="about-col-2">
+            <h1 class="about-h1">About Me</h1>
+            <p class="para">I'm a self-taught developer making the transition from social work to 
+                software engineering, with a focus on Front-End development. 
+                I've worked with tools like Figma and Webflow to design websites 
+                that are both visually appealing and user-friendly. I'm passionate 
+                about creating clean, functional web experiences and love the process of bringing ideas to life online. 
+                My goal is to continue growing my skills and 
+                eventually become a full-stack developer, 
+                blending my background in social work with my love for tech.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interface</li>
+                        <li><span>Web Development</span><br>I Develop Responsive Websites</li>
+                        <li><span>App Development</span><br>User friendly Apps</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>2021 - Current</span><br>FrontEnd Dev at Bima Sacco</li>
+                        <li><span>2019 - 2021</span><br>UX/UI at Airtel, Kenya</li>
+                        <li><span>2018 - 2019</span><br>FrontEnd Dev Intern at Safaricom</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2020</span><br>Moringa BootCamp</li>
+                        <li><span>2018</span><br>FrontEnd engineering at FreeCode Camp</li>
+                    <li><span>2017</span><br>UX/UI Certification at Edix</li>
+                    </ul>
+                </div>
+
+         </div> 
+        </div>
+    </div>
+   </div>
+
+   <!------------------ Services Section---------------------------->
+
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div class="service-container">
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Web Design</h2>
+                <p>We design beautiful, user-friendly websites that capture 
+                    your brand's essence and work seamlessly on any device. 
+                    Our goal is to help you connect with your audience and 
+                    achieve your business objectives through a strong online 
+                    presence.</p>
+                    <a href="#">Learn More</a>
+            </div>
+
+            <div class="service-container">
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>UI/UX Design</h2>
+                <p>Our UI/UX design service enhances user satisfaction by creating 
+                    intuitive and engaging interfaces. We conduct user research 
+                    to ensure seamless experiences that 
+                    improve usability and drive engagement, leading to higher 
+                    conversions.</p>
+                    <a href="#">Learn More</a>
+            </div>
+
+            <div class="service-container">
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Our web development service builds robust, scalable websites 
+                    using cutting-edge technology and best practices. 
+                    We focus on clean code and responsive design to 
+                    ensure fast performance and an excellent user experience.</p>
+                    <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------ Portfolio Section---------------------------->
+
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/PK1.jpg" alt="">
+                <div class="layer">
+                    <h3>Platinum Kitchens</h3>
+                    <p>Platinum Kitchens brings restaurant-quality meals straight 
+                        to your doorstep with our talented mobile chefs preparing 
+                        your favorite dishes in the comfort of your home. We specialize
+                         in diverse cuisines for intimate dinners, family gatherings, 
+                         or larger catering events, 
+                        all customized to your taste preferences. </p>
+                        <a href="your-projects-page.html" class="project-link">
+                            <i class="fas fa-plus"></i> <!-- Use the plus icon, or choose another -->
+                        </a>
+                </div>
+            
+            </div>
+
+            <div class="work">
+                <img src="Images/Melvin salon.jpg" alt="">
+                <div class="layer">
+                    <h3>Melvin Salon</h3>
+                    <p>Melvin Salon offers professional beauty services 
+                        both in-store and with convenient mobile house calls,
+                         including braiding, blow drying, hair treatments, 
+                         natural hair care, manicures, pedicures, and unique 
+                         nail art. Our expert team ensures top quality care 
+                         and a personalized experience, bringing luxury right 
+                         to your doorstep.</p>
+                        <a href="your-projects-page.html" class="project-link">
+                            <i class="fas fa-plus"></i> <!-- Use the plus icon, or choose another -->
+                        </a>
+                </div>
+            
+            </div>
+
+            <div class="work">
+                <img src="Images/SCHOOL 1 - Copy.jpg" alt="">
+                <div class="layer">
+                    <h3>Moriacy Group of Schools</h3>
+                    <p>Moriacy Group of Schools provides a comprehensive platform showcasing 
+                        all essential information about our educational programs, facilities, 
+                        and services. From academic curricula to extracurricular activities, 
+                        our website offers easy access to everything you need to know 
+                        about our school community.</p>
+                        <a href="your-projects-page.html" class="project-link">
+                            <i class="fas fa-plus"></i> <!-- Use the plus icon, or choose another -->
+                        </a>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!------------------ Contact Section---------------------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-square-envelope"></i>stephenjiru61@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+254701491788</p>
+                <p><i class="fa-solid fa-location-dot"></i>Nairobi, Kenya</p>
+                <div class="social-icons">
+                    <a href="https://x.com/SteveNjiru?t=LYyfu5e3XQ_OppMurqPCEA&s=09" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+
+                    <a href="https://x.com/SteveNjiru?t=LYyfu5e3XQ_OppMurqPCEA&s=09" target="_blank"><i class="fa-solid fa-x"></i></a>
+                    <a href="https://t.co/vGfarpMnXr" target="_blank"><i class="fa-brands fa-behance"></i></a>
+                    <a href="https://www.linkedin.com/in/stephen-kinyua1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="/Downloads/STEPHEN NJIRU KINYUA RESUME (1).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-1">
+        <div class="copyright">
+            <p>Copyright: All Rights Reserved &copy; Stephen Kinyua <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
