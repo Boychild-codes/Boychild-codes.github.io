@@ -29,7 +29,7 @@ var tablinks = document.getElementsByClassName("tab-links");
     document.getElementById('contactForm').addEventListener('submit', function(event) {
       event.preventDefault();
       const formData = new FormData(this);
-      fetch('<https://script.google.com/macros/s/AKfycbw3NVBe-WE9xE4jB6gCab8IlbVZI9h_I09URXKloi12zo_YoVS3gEGzFTAenkc9u2ZMFg/exec>', {
+      fetch('<https://script.google.com/macros/s/AKfycbz96e-ZkSdM2n6PCvk7lna1vvbimlrjseVCS51yOwnFktqmifBax41xeRRtkcr8UM2ySA/exec>', {
           method: 'POST',
           body: formData
       })
