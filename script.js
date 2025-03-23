@@ -26,37 +26,21 @@ var tablinks = document.getElementsByClassName("tab-links");
 
 
 
-    document.getElementById('contact-form').addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent the form from submitting the traditional way
-      
-        const form = event.target;
-        const formData = {
-          name: form.name.value,
-          email: form.email.value,
-          message: form.message.value,
-        };
-      
-        const status = document.getElementById('form-status');
-      
-        // Replace with your Google Apps Script Web App URL
-        const scriptURL = 'AKfycbxyRZ1bVHQMgbsOHoSNL0MhTjcnEPNRQ-_2cvKdyFxP';
-      
-        fetch(scriptURL, {
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const formData = new FormData(this);
+      fetch('<https://script.google.com/macros/s/AKfycbw3NVBe-WE9xE4jB6gCab8IlbVZI9h_I09URXKloi12zo_YoVS3gEGzFTAenkc9u2ZMFg/exec>', {
           method: 'POST',
-          body: JSON.stringify(formData),
-          headers: {
-            'Content-Type': 'application/json',
-          },
-        })
-          .then(response => response.text())
-          .then(data => {
-            status.innerHTML = 'Message sent successfully!';
-            form.reset();
-          })
-          .catch(error => {
-            status.innerHTML = 'Oops! There was a problem sending your message.';
-          });
+          body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+          alert('Form submitted successfully!');
+      })
+      .catch(error => {
+          alert('Error submitting form!');
       });
+  });
 
 
     
