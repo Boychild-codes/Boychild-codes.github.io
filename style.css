@@ -114,6 +114,21 @@ nav ul li a:hover::after {
     justify-content: flex-start;
 }
 
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menu-button {
+    display: none;
+}
+
+
+
+
 
 /* --------------------- About Section --------------------- */
 
