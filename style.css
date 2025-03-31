@@ -48,6 +48,27 @@ nav {
     width-left: 0;
 }
 
+nav ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    
+}
+
 nav ul li {
     display: inline-block;
     list-style: none;
