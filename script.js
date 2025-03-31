@@ -13,18 +13,18 @@ var tablinks = document.getElementsByClassName("tab-links");
         }
 
         //               Menu     //
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+        
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
 
-        const sidemenu = document.getElementById('sidemenu');
-
-    function openmenu(){
-        sidemenu.style.right = '0';
-    }
-
-    function closemenu(){
-        sidemenu.style.right = '-200px';
-    }
-
-
+//               Form     //
+// Contact Form Submission //
 
     document.getElementById('contactForm').addEventListener('submit', function(event) {
       event.preventDefault();
