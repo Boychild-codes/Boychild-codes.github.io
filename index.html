@@ -15,17 +15,23 @@
     <div class="container">
         <nav>
             <img src="Images/Steve (1).png " alt="Stephen Kinyua logo" class="logo">
-            <ul id="sidemenu">
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href=#><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <ul>
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid    " onclick="closemenu()"></i>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></i></a></li>
             </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i> 
-            
-     </nav>
+        </nav>
 
         <div class="header-text">
             <p>FrontEnd Software Engineer</p>
