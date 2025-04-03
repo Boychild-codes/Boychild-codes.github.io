@@ -306,40 +306,6 @@ nav ul li a:hover::after {
   .btn:hover {
     background: #ff004f;
   }
-
-  .layer a:hover {
-    background: #ff004f;
-    color: white;
-  }
-
-  .work:hover img {
-    transform: scale(1.1);
-  }
-
-  .work:hover .layer {
-    height: 100%;
-  }
-  
-  .btn {
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #ff004f;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: white;
-    transition: background 0.5s;
-  }
-
-  .btn:hover {
-    background: #ff004f;
-    
-  }
-  .layer p {
-    font-size: 14px;
-    margin-bottom: 0;
-  }
   
   /* Responsive adjustments */
   @media (max-width: 768px) {
