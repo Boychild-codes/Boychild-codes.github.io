@@ -15,14 +15,14 @@
     <div class="container">
         <nav>
             <img src="Images/Steve (1).png " alt="Stephen Kinyua logo" class="logo">
-            <ul class="sidebar">
+            <ul class="sidebar" id="sideMenu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li class="menu-button close-btn" onclick=hideSidebar()><a href=#><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li class="menuButton close-btn" onclick=hideSidebar()><a href=#><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#fff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
             </ul>
-            <li class="menu-button open-btn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></i></a></li>
+            <li class="menuButton open-btn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#fff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></i></a></li>
         </nav>
 
         <div class="header-text">
@@ -226,4 +226,15 @@
 </div>
 
 </body>
+
+<script>
+     var sideMenu = document.getElementById('sideMenu');
+    function showSidebar() {
+        sideMenu.style.right = '0';
+    }
+
+    function hideSidebar() {
+        sideMenu.style.right = '-200px';
+    }
+</script>
 </html>

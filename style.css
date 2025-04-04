@@ -392,7 +392,7 @@ nav ul li a:hover::after {
 
     /* --------------------- Media Queries --------------------- */
 
-    .menu-button {
+    nav .menuButton {
         display: none;
     }
 
@@ -411,7 +411,7 @@ nav ul li a:hover::after {
             font-size: 30px;
         }
 
-        .menu-button {
+        nav .menuButton {
             display: block;
             font-size: 25px;
         }
@@ -457,13 +457,12 @@ nav ul li a:hover::after {
         }
 
         .tab-links {
-            font-size: 16px;
-            margin-right: 18px;
+            font-size: 15px;
+            margin-right: 20px;
         }
 
         .contact-left, .contact-right {
             flex-basis: 100%;
-            
         }
 
         .copyright {
