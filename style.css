@@ -220,7 +220,7 @@ nav ul li a:hover::after {
 
 .services-list div:hover {
     background: #ff004f;
-    transform: translateY(-5px);
+    transform: translateY(-2px);
 }
 
 /* --------------------- My Work --------------------- */
@@ -425,7 +425,7 @@ nav ul li a:hover::after {
             top: 0;
             right: -200px;
             width: 200px;
-            height: 30vh;
+            height: 200px;
             padding-top: 50px;
             z-index: 2;
             transition: right 0.5s;
