@@ -199,8 +199,11 @@ nav ul li a:hover::after {
 .services-list div i {
     font-size: 50px;
     margin-bottom: 30px;
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
-
 .services-list div h2 {
     font-size: 30px;
     font-weight: 500;
