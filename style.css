@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 
 html {
@@ -35,7 +36,6 @@ nav {
 }
 
 .logo {
-    width: 100PX;
     cursor: pointer;
     width-left: 0;
 }
@@ -105,8 +105,8 @@ nav ul li a:hover::after {
 }
 
 .about-col-1 img {
-    width: 100%;
     border-radius: 15px;
+    margin-left: 40px;
 }
 
 .about-col-2 {
@@ -213,9 +213,22 @@ nav ul li a:hover::after {
 .services-list div a {
     text-decoration: none;
     color: #fff;
+    font-size: 14px;
+    background-color: #ff004f;
+    padding: 10px 20px;
+    border-radius: 6px;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
+    border: 1px solid #fff;
+
+}
+
+.services-list div a:hover {
+    background: #262626;
+    color: #fff;
+    transition: background 0.5s;
+    border: 1px solid #fff;
 }
 
 .services-list div:hover {
